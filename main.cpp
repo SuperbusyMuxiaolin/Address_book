@@ -14,6 +14,7 @@ int main(){
                 addperson(&abs);
                 break;
             case 2:
+                displayperson(&abs);
                 break;
             case 3:
                 break;

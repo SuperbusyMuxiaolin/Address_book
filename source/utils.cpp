@@ -41,3 +41,19 @@ void addperson(Addressbook* abs){
     std::cin.ignore();
     std::cin.get();
 }
+void displayperson(Addressbook* abs){
+    if(abs->m_size==0){
+        std::cout<<"当前通讯录为空"<<std::endl;
+        return;
+    }
+    for(int i=0;i<abs->m_size;i++){
+        std::cout<<"Name:"<<abs->p_arrary[i].m_name<<"\t";
+        std::cout<<"Age:"<<abs->p_arrary[i].m_age<<"\t";
+        std::cout<<"Sex:"<<abs->p_arrary[i].m_sex<<"\t";
+        std::cout<<"Number:"<<abs->p_arrary[i].m_number<<"\t";
+        std::cout<<std::endl;
+    }
+    std::cout<<"显示成功，按任意键回到主页"<<std::endl;
+    std::cin.ignore();
+    std::cin.get();
+}

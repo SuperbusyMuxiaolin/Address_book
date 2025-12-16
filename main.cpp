@@ -26,6 +26,9 @@ int main(){
             case 5:
                 modifyperson(&abs);
                 break;
+            case 6:
+                cleanperson(&abs);
+                break;
             case 0:
                 std::cout<<"请按回车键继续"<<std::endl;
                 std::cin.ignore();

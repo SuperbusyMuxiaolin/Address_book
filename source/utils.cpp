@@ -189,3 +189,9 @@ void modifyperson(Addressbook* abs){
     std::cin.get();
 
 }
+void cleanperson(Addressbook* abs){
+    abs->m_size=0;
+    std::cout<<"清空成功，按回车键回到主页"<<std::endl;
+    std::cin.ignore();
+    std::cin.get();
+}
